@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`styled.p renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`styled.p should apply bold modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: undefined;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`styled.p should apply italicize modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`styled.p should apply light modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`styled.p should apply lowercase modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-transform: lowercase;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`styled.p should apply normal modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`styled.p should apply semiBold modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: 600;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+<p
+  className="c0"
+/>
+`;

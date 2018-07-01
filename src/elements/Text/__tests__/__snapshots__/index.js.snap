@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`styled.span renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`styled.span should apply bold modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: undefined;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`styled.span should apply italicize modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-style: italic;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`styled.span should apply light modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: 300;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`styled.span should apply lowercase modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`styled.span should apply normal modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`styled.span should apply semiBold modifier 1`] = `
+.c0 {
+  display: inline-block;
+  line-height: 1.4em;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+<span
+  className="c0"
+/>
+`;
