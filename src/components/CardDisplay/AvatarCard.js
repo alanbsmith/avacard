@@ -3,12 +3,24 @@ import PropTypes from 'prop-types';
 
 import AvatarCardBlock from '../../blocks/AvatarCard';
 import Grid from '../../blocks/Grid';
+import withData from '../withData';
 
 const { Column, Container, Row } = Grid;
 
-function AvatarCard({ catchPhrase, email, name }) {
+function AvatarCard(props) {
+  const { catchPhrase, email, fetchUserPosts, onSelect, id, name } = props;
+
+  function handleClick() {
+    onSelect(id);
+    return fetchUserPosts(id);
+  }
+
   return (
-    <AvatarCardBlock tabIndex="0">
+    <AvatarCardBlock
+      data-testid="avatar-card"
+      onClick={handleClick}
+      tabIndex="0"
+    >
       <Row>
         <Column modifiers={['alignCenter']}>
           <AvatarCardBlock.Image email={email} />
@@ -40,7 +52,14 @@ function AvatarCard({ catchPhrase, email, name }) {
 AvatarCard.propTypes = {
   catchPhrase: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
+  fetchUserPosts: PropTypes.func.isRequired,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
 
-export default AvatarCard;
+function mappedData({ fetchUserPosts }) {
+  return { fetchUserPosts };
+};
+
+export default withData(mappedData)(AvatarCard);

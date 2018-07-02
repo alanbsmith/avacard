@@ -1,8 +1,8 @@
 {
-  "name": "styled-components-starter",
+  "name": "avacard",
   "version": "0.1.0",
-  "description": "a simple starter for Styled Components applications",
-  "main": "server.js",
+  "description": "Avatars + Cards",
+  "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.config.js",
     "start": "webpack-dev-server --hot --inline",
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
+    "babel-plugin-styled-components": "^1.5.1",
     "enzyme": "^3.2.0",
     "eslint": "^4.13.1",
     "eslint-loader": "^1.9.0",
@@ -70,7 +71,7 @@
       "!src/index.js",
       "!src/**/**.snap",
       "!src/config/**",
-      "!src/modifiers/index"
+      "!src/modifiers/index.js"
     ],
     "coverageThreshold": {
       "global": {

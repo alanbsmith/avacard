@@ -4,3 +4,4 @@ export dimensions from './dimensions';
 export fontSizes from './fontSizes';
 export fontWeights from './fontWeights';
 export gridScale from './gridScale';
+export shuffleList from './shuffleList';

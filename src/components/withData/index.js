@@ -2,11 +2,14 @@ import React from 'react';
 
 import DataProvider from '../DataProvider';
 
-const withData = Component => props => {
+const withData = mappedData => Component => props => {
   return (
     <DataProvider.Consumer>
       {data => (
-        <Component {...props} {...data} />
+        <Component
+          {...props}
+          {...mappedData(data)}
+        />
       )}
     </DataProvider.Consumer>
   );

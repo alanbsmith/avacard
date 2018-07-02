@@ -1,20 +1,40 @@
 import React, { Component } from 'react';
 
-import DataProvider from '../DataProvider';
 import Grid from '../../blocks/Grid';
-
 import CardDisplay from '../CardDisplay';
+import Details from '../Details';
+
+const { Container, Row } = Grid;
 
 class App extends Component {
+  state = {
+    selectedUserId: null,
+    showPosts: false,
+  }
+
+  handleUserSelect = id => {
+    const { selectedUserId, showPosts } = this.state;
+
+    if (id !== selectedUserId) {
+      return this.setState({
+        selectedUserId: id,
+        showPosts: true,
+      });
+    }
+
+    return this.setState({ showPosts: !showPosts });
+  }
+
   render() {
     return (
-      <DataProvider>
-        <Grid.Container>
-          <Grid.Row>
-            <CardDisplay />
-          </Grid.Row>
-        </Grid.Container>
-      </DataProvider>
+      <Container>
+        <Row>
+          <CardDisplay onUserSelect={this.handleUserSelect} />
+        </Row>
+        <Row>
+          <Details showPosts={this.state.showPosts} />
+        </Row>
+      </Container>
     );
   }
 };

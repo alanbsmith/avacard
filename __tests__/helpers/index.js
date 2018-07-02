@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components";
 import { shallow, mount } from 'enzyme';
 import "jest-styled-components";
 
+import DataProvider from '../../src/components/DataProvider';
+
 export function renderWithTheme(component) {
   return renderer.create(
     <ThemeProvider theme={theme}>{component}</ThemeProvider>

@@ -9,20 +9,27 @@ class DataProvider extends Component {
 
   state = {
     users: [],
+    userPosts: [],
   }
 
-  async componentWillMount() {
-    const users = await this.fetchUsers();
-    this.setState({ users });
+  componentWillMount() {
+    this.fetchUsers();
   }
 
   fetchUsers = async () => {
     const { data } = await axios.get('https://jsonplaceholder.typicode.com/users');
-    return data;
+    this.setState({ users: data });
+  }
+
+  fetchUserPosts = async id => {
+    const { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts?userId=${id}`);
+    this.setState({ userPosts: data });
   }
 
   render() {
     const context = {
+      fetchUserPosts: this.fetchUserPosts,
+      userPosts: this.state.userPosts,
       users: this.state.users,
     };
 

@@ -7,13 +7,16 @@ import configureFonts from './config/configureFonts';
 import theme from './config/theme';
 
 import App from './components/App';
+import DataProvider from './components/DataProvider';
 
 injectGlobal([buildGlobalStyles(theme)]);
 configureFonts(theme);
 
 render(
   <ThemeProvider theme={theme}>
-    <App />
+    <DataProvider>
+      <App />
+    </DataProvider>
   </ThemeProvider>
   , document.getElementById('root')
 );

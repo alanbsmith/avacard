@@ -10,9 +10,6 @@ const weightModfiers = {
   semiBold: ({ theme }) => `
     font-weight: ${fontWeights('semiBold', theme)};
   `,
-  bold: ({ theme }) => `
-    font-weight: ${fontWeights('bold', theme)};
-  `,
 };
 
 const styleModifiers = {

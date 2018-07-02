@@ -21,13 +21,13 @@ module.exports = {
     extensions: ['.js'],
   },
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/docs'),
     publicPath: '/',
     filename: 'bundle.js'
   },
   devtool: 'cheap-eval-source-map',
   devServer: {
-    contentBase: './dist',
+    contentBase: './docs',
     hot: true
   },
   plugins: [
